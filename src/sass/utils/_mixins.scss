@@ -1,0 +1,9 @@
+// example
+//@include font(700, 32px, 121%, null, var(--second-text-color));
+@mixin font($f-weight, $f-size, $l-height, $l-spacing, $color) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  letter-spacing: $l-spacing;
+  color: $color;
+}
