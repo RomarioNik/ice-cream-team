@@ -32,25 +32,93 @@
   flex-direction: column;
   gap: 60px;
 }
-.products-list__item {
+.products-tumba {
+  position: relative;
   padding: 0 40px;
   min-height: 420px;
-
-  background-color: #aec6a5;
   border-radius: 24px;
-  &:nth-child(2) {
-    background-color: #efd478;
-  }
-  &:last-child {
-    background-color: #d6936d;
-  }
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+.products-list__item--green {
+  background-color: #aec6a5;
+  &::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
   &::after {
     content: '';
-    display: block;
-    min-width: 200px;
-    min-height: 211px;
+    position: absolute;
+    top: -111px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+
     background-image: url(../images/ice-cream.png);
+    background-repeat: no-repeat;
+  }
+}
+.products-list__item--yellow {
+  background-color: #efd478;
+  &::before {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -111px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+
+    background-image: url(../images/ice-coffee.png);
+    background-repeat: no-repeat;
+  }
+}
+.products-list__item--cream {
+  background-color: #d6936d;
+  &::before {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -111px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+
+    background-image: url(../images/milkshakes.png);
     background-repeat: no-repeat;
   }
 }
