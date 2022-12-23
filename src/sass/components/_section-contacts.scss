@@ -1,0 +1,84 @@
+.contacts {
+    background-color: var(--bg-color);
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+    
+    &__item {
+            @include font(500, 12px, 1.83, 0.04em, var(--text-color));
+            background: #FCFCFC;
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+            padding: 40px 32px 24px 32px;    
+            width: 100%;
+        }
+  
+
+}
+.agency {
+    margin-top: 0;
+    &__category {
+            @include font(500, 12px, 1.16, 0.04em, var(--text-color));
+            display: inline-block;
+            background-color: var(--accent-text-color);
+            border-radius: 4px;
+            padding: 4px 14px;
+            margin-bottom: 20px;
+        }
+    &__city {
+            margin-bottom: 8px;
+        }
+    &__address {
+            color: #D6936D;
+            margin-bottom: 24px;
+        }
+}
+
+.schedule {
+    margin: 24px 0;
+    &__time {
+        color: #ABABAB;
+    }
+    &__work:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+.communication {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    margin-top: 24px;
+
+    &__item {
+        @include font(500, 12px, 1.58, null, var(--text-color));
+    }
+}
+.bottom-line::after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #E1E1E1;
+    width: 100%;
+}
+.contacts__btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-bottom: 60px;
+}
+.btn__locations, 
+.btn__franchise {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 196px;
+    height: 42px;
+}
+.btn__franchise {
+    border: 2px solid #F8D24E;
+    background-color: var(--bg-color);
+}
