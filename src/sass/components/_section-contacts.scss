@@ -1,11 +1,25 @@
 .contacts {
     background-color: var(--bg-color);
+   
     &__list {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
         margin-bottom: 20px;
         padding-top: 40px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            column-gap: 16px;
+            margin-bottom: 40px;
+            min-width: 704px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            column-gap: 36px;
+            margin-bottom: 60px;
+            // min-width: 1168px;
+        }
     }
     
     &__item {
@@ -68,15 +82,30 @@
     flex-direction: column;
     row-gap: 16px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        flex-direction: row;
+    }
 }
 .btn__locations, 
 .btn__franchise {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     margin: 0 auto;
     width: 196px;
     height: 42px;
+}
+.btn__lable {
+    white-space: nowrap;
+    margin-right: 4px;  
+}
+.btn_icon_container {
+    width: 14px;
+    height: 14px;
 }
 .btn__franchise {
     border: 2px solid #F8D24E;
