@@ -1,3 +1,47 @@
+.reviews {
+    @media screen and (min-width:320px) {
+            background-image: url(/src/images/reviews/fone_mob@1х.jpg);
+        }
+        @media screen and (min-width:768px) {
+            background-image: url(/src/images/reviews/fone_tab@1х.jpg);
+        }
+    @media screen and (min-width:1200px) {
+      background-image: url(/src/images/reviews/fone_desc@1x.jpg) ;  
+    }
+    
+    
+}
+.reviews .swiper-wrapper {
+    min-width: 0;
+}
+
+.reviews .swiper-pagination {
+    bottom: 0;
+}
+
+.reviews .swiper-pagination-bullet  {
+    width: 12px;
+    height: 12px;
+    background-color: var(--bg-color);
+}
+.swiper-slide .swiper-slide-active {
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+    }
+        @media screen and (max-width: 1199px) {
+            width: 768px;
+        }
+                @media screen and (min-width: 1200px) {
+                    width: 1200px;
+                }
+}
+
+
+
+.swiper-slide:not(:last-child) {
+margin-right: 30px;
+}
+
 .swiper__img {
     text-align: center;
     width: 85px;
@@ -6,8 +50,13 @@
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 464px;
 }
 
+.swiper__content {
+    margin-top: 32px;
+    margin-bottom: 272px;
+}
 
 .swiper__text {
     font-family: 'Montserrat';
@@ -19,17 +68,17 @@
     color: var(--second-text-color);
     background: var(--bg-color);
     border-radius: 10px;
-    margin-top: 32px;
+    
     margin-bottom: 32px;
-    @media screen and (min-width: 320px) {
+    /*@media screen and (min-width: 320px) {
         padding: 35px 39px;
                 
-    }
+    }*/
     @media screen and (min-width: 768px) {
-        padding: 28px 80px;
+        padding: 28px;
     }
         @media screen and (min-width: 1200px) {
-            padding: 43px 109px;
+            padding: 43px;
         }
 }
 .swiper__title {
@@ -40,4 +89,5 @@
     line-height: 186%;
     text-align: center;
     color: var(--text-color);
+    
 }
