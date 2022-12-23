@@ -1,0 +1,46 @@
+.wrap {
+  height: 1250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tumba {
+  position: relative;
+  width: 370px;
+  height: 536px;
+
+  background-color: #aec6a5;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -138px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -151px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    background-image: url('../images/images-modal/ice-coffee-pic-modal-2x.jpg');
+  }
+}
