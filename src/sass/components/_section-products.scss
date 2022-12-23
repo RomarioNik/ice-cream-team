@@ -3,8 +3,15 @@
   text-align: center;
 
   background-image: url(../images/Backgroud_mobile.jpg);
-  background-size: contain;
+  // background-size: contain;
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/Background_tablet.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 32px;
+  }
 }
+
 .products__label {
   display: block;
   margin-bottom: 12px;
@@ -29,11 +36,18 @@
   text-transform: uppercase;
 
   color: var(--text-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 200px;
+  }
 }
 .products-list {
   display: flex;
   flex-direction: column;
   gap: 168px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 .products-tumba {
   display: flex;
@@ -54,6 +68,9 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 16px) / 3);
   }
 }
 .products-list__item--green {
