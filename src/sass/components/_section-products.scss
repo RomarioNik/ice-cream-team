@@ -33,9 +33,13 @@
   gap: 168px;
 }
 .products-tumba {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: relative;
-  padding: 123px 40px 76px 40px;
-  min-height: 420px;
+  padding: 123px 40px 16px;
+  height: 420px;
   border-radius: 24px;
 
   &::before {
@@ -144,18 +148,18 @@
 
   color: var(--text-color);
 }
-.products-list__wrap {
-  height: 100%;
-  overflow: hidden;
-}
+// .products-list__wrap {
+//   height: 100%;
+//   overflow: hidden;
+// }
 .products-list__btn {
   height: 16px;
   background-color: transparent;
   border: none;
 
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
+  //   position: absolute;
+  //   bottom: 60px;
+  //   left: 50%;
 
-  transform: translateX(-50%);
+  //   transform: translateX(-50%);
 }
