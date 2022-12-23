@@ -1,7 +1,131 @@
 <!-- стилизуй по этому классу ingredients-modal, класс modal - общий класс для
 всех модалок -->
 <div class="ingredients-modal modal" data-modal="2">
-  <svg class="modal__svg-close js-modal-close">
-    <use href="./images/icons/icons.svg#icon-close"></use>
-  </svg>
+  <button class="buy-modal__button-close js-modal-close">
+    <svg class="modal__svg-close">
+      <use href="./images/icons/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="modal-container">
+    <p class="modal__title ingredients-modal__title">Chololate icecream</p>
+
+    <div class="ingredients-modal__picture-thumb">
+      <picture>
+        <source
+          srcset="
+            ./images/images-modal/choco-ice-cream-pic-modal-1x.jpg 1x,
+            ./images/images-modal/choco-ice-cream-pic-modal-2x.jpg 2x
+          "
+          media="(min-width: 100px)"
+        />
+
+        <img
+          class="ingredients-modal__picture"
+          src="./images/images-modal/ice-cream-pic-modal-2x.jpg"
+          alt="Shocolate ice cream in hand"
+          width="132"
+        />
+      </picture>
+      <div class="ingredients-modal__picture-ellipse"></div>
+    </div>
+
+    <div class="ingredients-modal__kalories">
+      <ul class="ingredients-modal__kalories-list">
+        <li class="ingredients-modal__kalories-item">
+          <div class="ingredients-modal__kalories-description">kcal</div>
+          <div class="ingredients-modal__kalories-value">320</div>
+        </li>
+        <li class="ingredients-modal__kalories-item">
+          <div
+            class="ingredients-modal__kalories-description ingredients-modal__kalories-description-nowrap"
+          >
+            Proteinooooo
+          </div>
+          <div class="ingredients-modal__kalories-value">4g</div>
+        </li>
+        <li class="ingredients-modal__kalories-item">
+          <div class="ingredients-modal__kalories-description">Fats</div>
+          <div class="ingredients-modal__kalories-value">8,2g</div>
+        </li>
+        <li class="ingredients-modal__kalories-item">
+          <div class="ingredients-modal__kalories-description">Carbs</div>
+          <div class="ingredients-modal__kalories-value">40,4g</div>
+        </li>
+      </ul>
+    </div>
+
+    <p class="ingredients-modal__ingredients-title">Ingredients</p>
+    <ul class="ingredients-modal__ingredients-list">
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">Milk</p>
+        <p class="ingredients-modal__ingredients-description">100ml</p>
+      </li>
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">
+          Belgian chocolate
+        </p>
+        <p class="ingredients-modal__ingredients-description">20g</p>
+      </li>
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">Cream</p>
+        <p class="ingredients-modal__ingredients-description">150 ml</p>
+      </li>
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">Cocoa powder</p>
+        <p class="ingredients-modal__ingredients-description">30g</p>
+      </li>
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">Sugar</p>
+        <p class="ingredients-modal__ingredients-description">40g</p>
+      </li>
+      <li class="ingredients-modal__ingredients-item">
+        <p class="ingredients-modal__ingredients-description">Vanilla sugar</p>
+        <p class="ingredients-modal__ingredients-description">10g</p>
+      </li>
+    </ul>
+
+    <form>
+      <div class="ingredients-modal__input-field modal__input-field">
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          class="ingredients-modal__input modal__input"
+          placeholder="Name"
+          required
+          pattern="[A-Za-zА-Яа-яЁёІіЇї\-\s]+$"
+          title="Name can only contain letters, spaces and dashes."
+        />
+      </div>
+      <div class="ingredients-modal__input-field modal__input-field">
+        <input
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          class="ingredients-modal__input modal__input"
+          required
+          placeholder="Phone"
+          pattern="[\d+\-\/*%^()\s]+$"
+          title="Phone can notcontain letters."
+        />
+      </div>
+
+      <div class="ingredients-modal__comment-field modal__comment-field">
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="ingredients-modal__input ingredients-modal__comment modal__input modal__comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="btn ingredients-modal__submit-button modal__submit-button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </div>

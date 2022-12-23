@@ -68,28 +68,24 @@
         </li>
       </ul>
 
-      <div class="buy-modal__input-field">
-        <!-- <label for="user-name" class="input-label">Ім'я</label> -->
-
+      <div class="buy-modal__input-field modal__input-field">
         <input
           type="text"
           name="user-name"
           id="user-name"
-          class="buy-modal__input"
+          class="buy-modal__input modal__input"
           placeholder="Name"
           required
           pattern="[A-Za-zА-Яа-яЁёІіЇї\-\s]+$"
           title="Name can only contain letters, spaces and dashes."
         />
       </div>
-      <div class="buy-modal__input-field">
-        <!-- <label for="user-tel" class="input-label">Телефон</label> -->
-
+      <div class="buy-modal__input-field modal__input-field">
         <input
           type="tel"
           name="user-tel"
           id="user-tel"
-          class="buy-modal__input"
+          class="buy-modal__input modal__input"
           required
           placeholder="Phone"
           pattern="[\d+\-\/*%^()\s]+$"
@@ -97,17 +93,21 @@
         />
       </div>
 
-      <div class="buy-modal__comment-field">
-        <!-- <label for="user-comment" class="input-label">Коментар</label> -->
+      <div class="buy-modal__comment-field modal__comment-field">
         <textarea
           name="user-comment"
           id="user-comment"
-          class="buy-modal__input buy-modal__comment"
+          class="buy-modal__input buy-modal__comment modal__input modal__comment"
           placeholder="Comment"
         ></textarea>
       </div>
 
-      <button type="submit" class="btn buy-modal__submit-button">Submit</button>
+      <button
+        type="submit"
+        class="btn buy-modal__submit-button modal__submit-button"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>
