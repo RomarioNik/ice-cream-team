@@ -8,39 +8,32 @@
     @media screen and (min-width:1200px) {
       background-image: url(/src/images/reviews/fone_desc@1x.jpg) ;  
     }
-    
-    
 }
-.reviews .swiper-wrapper {
+
+.swiper-wrapper{
     min-width: 0;
 }
 
-.reviews .swiper-pagination {
-    bottom: 0;
-}
 
 .reviews .swiper-pagination-bullet  {
+    
+  
     width: 12px;
     height: 12px;
     background-color: var(--bg-color);
 }
-.swiper-slide .swiper-slide-active {
-    @media screen and (max-width: 767px) {
-        width: 320px;
-    }
-        @media screen and (max-width: 1199px) {
-            width: 768px;
+.swiper-slide {
+    @media screen and (max-width:767px) {
+        max-width: 320px;
+        @media screen and (max-width:768px) {
+            max-width: 768px;
         }
-                @media screen and (min-width: 1200px) {
-                    width: 1200px;
-                }
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;        
+    }   
 }
 
-
-
-.swiper-slide:not(:last-child) {
-margin-right: 30px;
-}
 
 .swiper__img {
     text-align: center;
@@ -50,12 +43,11 @@ margin-right: 30px;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 464px;
-}
+    }
 
 .swiper__content {
     margin-top: 32px;
-    margin-bottom: 272px;
+    
 }
 
 .swiper__text {
@@ -70,15 +62,20 @@ margin-right: 30px;
     border-radius: 10px;
     
     margin-bottom: 32px;
-    /*@media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) {
         padding: 35px 39px;
                 
-    }*/
+    }
     @media screen and (min-width: 768px) {
-        padding: 28px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 186%;
+            letter-spacing: 0.04em;
+            padding: 28px 80px;
     }
         @media screen and (min-width: 1200px) {
-            padding: 43px;
+                font-size: 16px;
+                padding: 43px 109px;
         }
 }
 .swiper__title {
@@ -89,5 +86,8 @@ margin-right: 30px;
     line-height: 186%;
     text-align: center;
     color: var(--text-color);
+    @media screen and (min-width: 768) {
+            font-size: 16px;
+     }
     
 }
