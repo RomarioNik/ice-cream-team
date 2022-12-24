@@ -1,13 +1,17 @@
 .reviews {
-    @media screen and (min-width:320px) {
-            background-image: url(/src/images/reviews/fone_mob@1х.jpg);
+        @media screen and (min-width:320px) {
+           padding-top: 40px;
+           padding-bottom: 20px;
         }
         @media screen and (min-width:768px) {
-            background-image: url(/src/images/reviews/fone_tab@1х.jpg);
+            padding-top: 50px;
+            padding-bottom: 40px;
+            
         }
-    @media screen and (min-width:1200px) {
-      background-image: url(/src/images/reviews/fone_desc@1x.jpg) ;  
-    }
+        @media screen and (min-width:1200px) {
+            padding-top: 70px;
+            padding-bottom: 50px;      
+        }
 }
 
 .swiper-wrapper{
@@ -21,15 +25,15 @@
     background-color: var(--bg-color);
 }
 .swiper-slide {
-    @media screen and (max-width:767px) {
+        @media screen and (max-width:767px) {
         max-width: 320px;
         @media screen and (max-width:768px) {
             max-width: 768px;
         }
-    }
-    @media screen and (min-width:1200px) {
+        }
+        @media screen and (min-width:1200px) {
         max-width: 1200px;        
-    }   
+        }   
 }
 
 
@@ -47,9 +51,8 @@
     margin-top: 32px;
     margin-bottom: 24px;
     @media screen and (min-width:768px) {
-        margin-bottom: 46px;        
-    }
-    
+    margin-bottom: 46px;        
+    }    
 }
 
 .swiper__text {
@@ -62,13 +65,16 @@
     color: var(--second-text-color);
     background: var(--bg-color);
     border-radius: 10px;
-    
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 320px) {
+        max-width: 280px;
         padding: 35px 39px;
                 
     }
     @media screen and (min-width: 768px) {
+        max-width: 705px;
             font-weight: 500;
             font-size: 14px;
             line-height: 186%;
@@ -76,10 +82,12 @@
             padding: 28px 80px;
     }
         @media screen and (min-width: 1200px) {
-                font-size: 16px;
-                padding: 43px 109px;
+            max-width: 968px;
+            font-size: 16px;
+            padding: 43px 109px;
         }
 }
+
 .swiper__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -89,9 +97,8 @@
     text-align: center;
     color: var(--text-color);
     @media screen and (min-width: 768) {
-            font-size: 16px;
-     }
-    
+        font-size: 16px;
+     }    
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
