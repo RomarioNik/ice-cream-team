@@ -125,6 +125,12 @@
 
     background-image: url(../images/ice-cream.png);
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/ice-cream-x2.png);
+      background-size: contain;
+    }
     @media screen and (min-width: 1200px) {
       width: 302px;
       height: 302px;
@@ -161,6 +167,12 @@
 
     background-image: url(../images/ice-coffee.png);
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/ice-coffee-x2.png);
+      background-size: contain;
+    }
     @media screen and (min-width: 1200px) {
       width: 302px;
       height: 302px;
@@ -197,6 +209,12 @@
 
     background-image: url(../images/milkshakes.png);
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/milkshakes-x2.png);
+      background-size: contain;
+    }
     @media screen and (min-width: 1200px) {
       width: 302px;
       height: 302px;
