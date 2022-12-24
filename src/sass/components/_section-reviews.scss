@@ -11,13 +11,11 @@
 }
 
 .swiper-wrapper{
-    min-width: 0;
+   min-width: 0;
 }
 
 
 .reviews .swiper-pagination-bullet  {
-    
-  
     width: 12px;
     height: 12px;
     background-color: var(--bg-color);
@@ -47,6 +45,10 @@
 
 .swiper__content {
     margin-top: 32px;
+    margin-bottom: 24px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 46px;        
+    }
     
 }
 
@@ -91,3 +93,11 @@
      }
     
 }
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+bottom: -9px;
+ }
+ 
