@@ -1,10 +1,10 @@
 .advantages_section{
     background-color: var(--bg-color);
     padding-top: 50px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         padding-top: 60px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 60px;
     }
 }
@@ -17,11 +17,11 @@
     gap: 28px;
     flex-wrap: wrap; 
     justify-content: center;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         gap: 80px;
         flex-wrap: nowrap;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         gap: 32px;
         flex-wrap: nowrap;
     }
@@ -31,10 +31,10 @@
     justify-content: center;
     width: 230px;
     display: block;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         width: 152px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         // width: 368px;
         width: calc((100% - 64px)/2);
     }
@@ -61,12 +61,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--second-text-color);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         margin-top: 32px;
         font-size: 48px;
         line-height: 1.23;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 40px;
         font-weight: 700;
         font-size: 58px;
@@ -81,13 +81,13 @@
     color: var(--second-text-color);
     margin-top: 16px;
     text-align: center;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         margin-top: 12px;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.71;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 12px;
         font-size: 16px;
         font-weight: 400;
