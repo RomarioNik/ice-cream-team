@@ -16,8 +16,8 @@
   opacity: 0;
   visibility: hidden;
   width: 100%;
-  max-width: 280px;
-  max-height: calc(100% - 20px);
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
 
   position: fixed;
   top: 50%;
@@ -36,6 +36,10 @@
   transition: opacity 300ms var(--base-cubic-transition),
     visibility 300ms var(--base-cubic-transition);
   overflow-y: auto;
+
+  @include mobile {
+    max-width: 440px;
+  }
 
   @include tablet {
     min-width: 568px;

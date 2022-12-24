@@ -6,13 +6,14 @@
 
 .buy-modal__product-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin-bottom: 31px;
 
   @include tablet {
+    flex-direction: row;
     gap: 32px;
     margin-bottom: 40px;
   }
