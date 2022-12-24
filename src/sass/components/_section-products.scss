@@ -130,6 +130,12 @@
       height: 302px;
       top: -167px;
       background-image: url(../images/ice-cream-pc.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream-pc-x2.png);
+        background-size: contain;
+      }
     }
   }
 }
@@ -160,6 +166,12 @@
       height: 302px;
       top: -167px;
       background-image: url(../images/ice-coffee-pc.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/ice-coffee-pc-x2.png);
+        background-size: contain;
+      }
     }
   }
 }
@@ -190,6 +202,12 @@
       height: 302px;
       top: -167px;
       background-image: url(../images/milkshakes-pc.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/milkshakes-pc-x2.png);
+        background-size: contain;
+      }
     }
   }
 }
