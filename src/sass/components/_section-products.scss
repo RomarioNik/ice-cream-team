@@ -1,12 +1,7 @@
 .products__wrap {
-  padding: 60px 25px;
+  padding: 60px 20px;
   text-align: center;
 
-  background-image: url(../images/Backgroud_mobile.jpg);
-  // background-size: contain;
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/Background_tablet.jpg);
-  }
   @media screen and (min-width: 768px) {
     padding: 60px 32px;
   }
@@ -22,6 +17,11 @@
   text-transform: uppercase;
 
   color: var(--text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
 }
 
 .products__title {
@@ -38,6 +38,8 @@
   color: var(--text-color);
   @media screen and (min-width: 768px) {
     margin-bottom: 200px;
+    font-size: 34px;
+    line-height: calc(43 / 34);
   }
 }
 .products-list {
