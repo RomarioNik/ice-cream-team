@@ -9,6 +9,7 @@ background-image: linear-gradient((var(--bg-color) 44%, transparent 44%), (var(-
 background-image: linear-gradient((var(--bg-color) 23%, transparent 23%), (var(--bg-color) 23%, transparent 23%));
 }
 }
+
 .slides {
 width: 280px;
 height: 130px;
@@ -40,7 +41,7 @@ height: 422px;
     0% {opacity: 1;}
     22% {opacity: 1;}
     33% {opacity: 0;}
-    88% {opacity: 0;}
+    89% {opacity: 0;}
     100% {opacity: 1;}
 }
 
@@ -58,6 +59,7 @@ animation-delay: 0;
 animation-play-state: running;
 animation-fill-mode: forwards;
 }
+
 .slides ul li:nth-child(1) {
     animation-delay: 0s;
 }
