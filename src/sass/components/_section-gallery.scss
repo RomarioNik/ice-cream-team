@@ -58,15 +58,13 @@ animation-delay: 0;
 animation-play-state: running;
 animation-fill-mode: forwards;
 }
-.slides ul li:nth-child(1),
-.slides ul li:nth-child(1) div {
+.slides ul li:nth-child(1) {
     animation-delay: 0s;
 }
-.slides ul li:nth-child(2), .slides ul li:nth-child(2) div {
+.slides ul li:nth-child(2) {
     animation-delay: 3.0s;
 }
-.slides ul li:nth-child(3),
-.slides ul li:nth-child(3) div {
+.slides ul li:nth-child(3) {
     animation-delay: 6.0s;
 }
 
