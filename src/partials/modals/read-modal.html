@@ -1,7 +1,40 @@
 <!-- стилизуй по этому классу read-modal // класс modal - общий класс для всех
 модалок -->
 <div class="read-modal modal" data-modal="3">
-  <svg class="modal__svg-close js-modal-close">
+  <button class="read-modal__button-close js-modal-close">
+    <svg class="modal__svg-close">
+      <use href="./images/icons/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <!-- <svg class="modal__svg-close js-modal-close">
     <use href="./images/icons/icons.svg#icon-close"></use>
-  </svg>
+  </svg> -->
+
+  <div class="modal-container">
+    <p class="modal__title read-modal__title">How it’s made?</p>
+
+    <!-- <iframe
+    name="myframe"
+    width="250px"
+    height="250px"
+    src="https://youtu.be/CcCj5geNRwM"
+  ></iframe> -->
+
+    <iframe
+      class="read-modal__video"
+      name="read-modal__video"
+      width="100%"
+      height="200px"
+      src="https://www.youtube.com/embed/CcCj5geNRwM"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <p class="modal__text read-modal__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
 </div>

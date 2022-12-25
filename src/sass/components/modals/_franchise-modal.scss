@@ -1,0 +1,19 @@
+.franchise-modal {
+  @include tablet {
+    padding: 0px 60px 32px 60px;
+  }
+}
+
+.franchise-modal__title {
+  @include tablet {
+    margin-bottom: 24px;
+    padding: 0px 63px;
+  }
+}
+
+.franchise-modal__text {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
