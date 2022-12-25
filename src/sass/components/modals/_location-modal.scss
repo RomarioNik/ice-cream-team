@@ -25,10 +25,10 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  padding: 12px 34px;
 
   @include tablet {
     font-size: 14px;
     line-height: 1.21;
-    padding: 12px 34px;
   }
 }
