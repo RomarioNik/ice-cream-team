@@ -1,0 +1,93 @@
+.gallery {
+  background-image: linear-gradient(
+    (var(--bg-color) 25%, transparent 25%),
+    (var(--bg-color) 25%, transparent 25%)
+  );
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      (var(--bg-color) 44%, transparent 44%),
+      (var(--bg-color) 25%, transparent 25%)
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      (var(--bg-color) 23%, transparent 23%),
+      (var(--bg-color) 23%, transparent 23%)
+    );
+  }
+}
+
+.slides {
+  width: 280px;
+  height: 130px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slides ul {
+  list-style: none;
+  position: relative;
+}
+
+@keyframes animation-gallery {
+  0% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slides ul li {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+
+  animation-name: animation-gallery;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.slides ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.slides ul li:nth-child(2) {
+  animation-delay: 3s;
+}
+.slides ul li:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.slides ul li img {
+  display: block;
+}
