@@ -30,6 +30,11 @@
             width: 100%;
             @media screen and (min-width: 768px) {
                 padding-bottom: 40px;
+                @include font (500, 14px, 1.86, 0.04em, var(--text-color));
+            }
+            @media screen and (min-width: 1200px) {
+                padding: 40px;
+                @include font (500, 16px, 1.87, 0.04em, var(--text-color));
             }
         }
   
@@ -51,12 +56,14 @@
       
     &__city {
             margin-bottom: 8px;
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                margin-bottom: 12px;
+            }
         }
     &__address {
-            // color: var(--text-color);
             margin-bottom: 24px;
                        @media screen and (min-width: 768px) {
-                margin: 32px 0;
+                margin-bottom: 32px;
             }
            
         }
