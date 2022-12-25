@@ -1,11 +1,13 @@
 .advantages_section{
     background-color: var(--bg-color);
     padding-top: 50px;
+    padding-bottom: 32px;
     @media screen and (min-width: 768px) {
         padding-top: 60px;
+        padding-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
-        padding-top: 60px;
+        padding-bottom: 80px;
     }
 }
 
@@ -23,7 +25,6 @@
     }
     @media screen and (min-width: 1200px) {
         gap: 32px;
-        flex-wrap: nowrap;
     }
 }
 
@@ -59,7 +60,6 @@
     line-height: 1.22;
     text-align: center;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--second-text-color);
     @media screen and (min-width: 768px) {
         margin-top: 32px;
