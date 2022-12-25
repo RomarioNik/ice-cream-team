@@ -51,6 +51,7 @@
             margin-bottom: 20px;
             @media screen and (min-width: 768px) {
                     margin-bottom: 32px;
+                    @include font(500, 16px, 1.37, 0.04em, var(--text-color));
                 }
         }
       
