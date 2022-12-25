@@ -36,9 +36,14 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 46px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 20px;
+  }
 }
 
 .swiper__text {
+  max-width: 440px;
   font-weight: 400;
   font-size: 12px;
   line-height: 255%;
@@ -84,5 +89,13 @@
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: -9px;
+  bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 40px;
+  }
 }
