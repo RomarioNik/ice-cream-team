@@ -1,3 +1,59 @@
 <section class="hero">
-  <div class="container"></div>
+  <div class="hero__container container">
+    <div class="hero_wrap-info">
+      <div>
+        <h1 class="hero__title">ice cream made with 
+          <span class="hero__title-word">passion</span>
+        </h1>
+        <div class="hero__info">
+          <a class="hero__link-button btn" href="#">Products</a>
+          <a class="hero__link" href="#how-made">How it's made?</a>
+        </div>
+      </div>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <span class="hero__number">16</span>
+          <span class="hero__place">Cafes</span>
+        </li>
+        <li class="hero__item">
+          <span class="hero__number">23</span>
+          <span class="hero__place">food trucks</span>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__plate">
+      <div>
+      <picture class="hero__img">
+      <source srcset="./images/ice-cream-desktop.png, ./images/ice-cream-desktop2x.png 2x" media="(min-width: 1200px)">
+      <source srcset="./images/ice-cream-tablet.png, ./images/ice-cream-tablet2x.png 2x" media="(min-width: 768px)">
+      <source srcset="./images/ice-cream-mobile.png, ./images/ice-cream-mobile2x.png 2x" media="(min-width: 480px)">
+      <img
+      class="hero__ice-cream"
+      src="./images/ice-cream-desktop.png"
+      alt="фото морозива"
+      width="456"/>
+      </div>
+
+      <div class="hero__plate-info">
+        <p class="hero__plate-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+        </p>
+        <svg class="hero__plate-svg" width="40" heigth="16">
+          <use href="./images/icons/icons.svg#icon-button-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="hero__thumb">
+      <picture class="hero__img">
+      <!-- <source srcset="./images/many-ice-cream-desktop.png, ./images/many-ice-cream-desktop.png 2x" media="(min-width: 1200px)">
+      <source srcset="./images/many-ice-cream-tablet.png, ./images/many-ice-cream-tablet.png 2x" media="(min-width: 768px)">
+      <source srcset="./images/many-ice-cream-mobile.png, ./images/many-ice-cream-mobile.png 2x" media="(min-width: 480px)"> -->
+      <img
+      class="hero__many-ice-cream"
+      src="./images/many-ice-cream-desktop.png"
+      alt="фото багато кульок морозива"
+      width="225"/>
+    </picture>
+    </div>
+  </div>
 </section>

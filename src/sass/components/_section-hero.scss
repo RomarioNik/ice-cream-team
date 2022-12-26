@@ -1,0 +1,125 @@
+.hero {
+    height: 502px;
+    background-color: #84a178;
+    padding-top: 99px;
+    position: relative;
+
+    
+}
+
+.hero__container {
+    height: 100%;
+    // background-image: url() ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero__title {
+    max-width: 247px;
+    letter-spacing: .04em;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    margin-bottom: 39px;
+    font-family: Seymour One,sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 126%;
+}
+
+.hero__title-word {
+    font-size: 34px;
+}
+
+.hero__link-button {
+    color: #000;
+    border: 2px solid var(--button-color);
+    background-color: rgba(0,0,0,0);
+    border-radius: 8px;
+    padding: 11px 26px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 125%;
+
+    @media screen and(min-width: 767px) {
+        display: none;
+    }
+}
+
+.hero__link {
+    color: var(--accent-text-color);
+    margin-left: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-decoration: underline;
+}
+.hero__list {
+    display: none;
+    @media screen and(min-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        display: flex;
+    }
+}
+
+.hero__item {
+    text-align: right;
+    flex-direction: column;
+    display: flex;
+}
+
+.hero__number {
+    letter-spacing: .04em;
+    color: var(--text-color);
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 121%;
+    display: block;
+}
+
+.hero__place {
+    color: var(--second-text-color);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.hero__plate {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+.hero__plate-info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    display: flex;
+}
+
+.hero__plate-text {
+    max-width: 139px;
+    color: var(--second-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.hero__plate-svg {
+    fill: #fcfcfc;
+}
+
+.hero__thumb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-48%);
+}
+
