@@ -1,7 +1,125 @@
+<!-- удалить после разметки кнопок в секциях -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <button class="hero__button js-open-modal" type="button" data-modal="1">
+      Buy now
+    </button>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Стрілка на продукті</h1>
+    <button class="hero__button js-open-modal" type="button" data-modal="2">
+      -->
+    </button>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">how it’s made?</h1>
+    <button class="hero__button js-open-modal" type="button" data-modal="3">
+      Read more >
+    </button>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Our Locations</h1>
+    <button class="hero__button js-open-modal" type="button" data-modal="4">
+      Our Locations >
+    </button>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Franchise</h1>
+    <button class="hero__button js-open-modal" type="button" data-modal="5">
+      Franchise >
+    </button>
+  </div>
+</section>
+
+<!-- --------------------------------------------------- -->
+
 <!-- стилизуй по этому классу franchise-modal // класс modal - общий класс для
 всех модалок -->
 <div class="franchise-modal modal" data-modal="5">
-  <svg class="modal__svg-close js-modal-close">
-    <use href="./images/icons/icons.svg#icon-close"></use>
-  </svg>
+  <button class="franchise-modal__button-close js-modal-close">
+    <svg class="modal__svg-close">
+      <use href="./images/icons/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="modal-container">
+    <form>
+      <p class="modal__title franchise-modal__title">
+        Thank you for your interest in owning an Ice Cream shop
+      </p>
+
+      <p class="modal__text franchise-modal__text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+
+      <div class="franchise-modal__input-field modal__input-field">
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          class="franchise-modal__input modal__input"
+          placeholder="Name"
+          required
+          pattern="[A-Za-zА-Яа-яЁёІіЇї\-\s]+$"
+          title="Name can only contain letters, spaces and dashes."
+        />
+      </div>
+      <div class="franchise-modal__input-field modal__input-field">
+        <input
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          class="buy-modal__input modal__input"
+          required
+          placeholder="Phone"
+          pattern="[\d+\-\/*%^()\s]+$"
+          title="Phone can not contain letters."
+        />
+      </div>
+      <div class="franchise-modal__input-field modal__input-field">
+        <input
+          type="email"
+          name="user-email"
+          id="user-email"
+          class="franchise-modal__input modal__input"
+          required
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+      </div>
+
+      <div class="franchise-modal__comment-field modal__comment-field">
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="franchise-modal__input franchise-modal__comment modal__input modal__comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-bg franchise-modal__submit-button modal__submit-button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </div>

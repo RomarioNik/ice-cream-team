@@ -2,14 +2,24 @@
 //   outline: 2px solid tomato;
 // }
 
-.modal__svg-close {
+.js-modal-close {
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 24px;
-  height: 24px;
-  fill: var(--text-color);
+  top: 17px;
+  right: 17px;
   cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
+.modal__svg-close {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color);
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .modal {
@@ -26,12 +36,11 @@
   z-index: 30;
 
   background: #fcfcfc;
-  border: 2px solid var(--button-color);
-  // outline: 2px solid var(--button-color);
+  outline: 2px solid var(--button-color);
   border-radius: 10px;
 
   text-align: center;
-  padding: 0px 28px 28px 28px;
+  padding: 28px;
 
   transition: opacity 300ms var(--base-cubic-transition),
     visibility 300ms var(--base-cubic-transition);
@@ -53,7 +62,7 @@
 }
 
 .modal__title {
-  font-family: 'Seymour One';
+  font-family: 'Seymour One', sans-serif;
 
   font-weight: 400;
   font-size: 16px;
@@ -69,10 +78,16 @@
 
 .modal__input-field {
   margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
 }
 
 .modal__comment-field {
   margin-bottom: 26px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .modal__input {
@@ -107,6 +122,7 @@
   }
 
   @include tablet {
+    padding: 11px 16px;
     margin: 0 auto;
     width: 368px;
     height: 42px;
@@ -131,5 +147,18 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.21;
+  }
+}
+
+.modal__text {
+  text-align: left;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-color);
+
+  @include tablet {
+    font-size: 16px;
   }
 }

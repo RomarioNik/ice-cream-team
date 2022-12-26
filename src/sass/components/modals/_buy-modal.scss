@@ -1,6 +1,6 @@
-.buy-modal__title {
+.buy-modal {
   @include tablet {
-    margin-bottom: 40px;
+    padding: 32px 54px;
   }
 }
 
@@ -32,7 +32,7 @@
   position: relative;
 
   display: block;
-  cursor: pointer;
+  cursor: var(--cursor-hover), pointer;
 
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
@@ -89,10 +89,9 @@
 
   &::after {
     background-image: url('../images/images-modal/ice-cream-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/ice-cream-pic-modal-2x.jpg');
-      background-size: 100%;
     }
   }
 }
@@ -115,10 +114,9 @@
 
   &::after {
     background-image: url('../images/images-modal/ice-coffee-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/ice-coffee-pic-modal-2x.jpg');
-      background-size: 100%;
     }
   }
 }
@@ -141,77 +139,9 @@
 
   &::after {
     background-image: url('../images/images-modal/milkshake-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/milkshake-pic-modal-2x.jpg');
-      background-size: 100%;
     }
   }
 }
-
-// .buy-modal__input-field {
-//   margin-bottom: 12px;
-// }
-
-// .buy-modal__comment-field {
-//   margin-bottom: 26px;
-// }
-
-// .buy-modal__input {
-//   display: block;
-//   padding: 8px 12px;
-
-//   background: rgba(248, 210, 78, 0.1);
-//   border: 1px solid #84a178;
-//   border-radius: 10px;
-
-//   width: 100%;
-//   height: 32px;
-
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 1.4;
-//   color: var(--text-color);
-
-//   outline: transparent;
-
-//   &:focus,
-//   &:hover {
-//     border: 1px solid var(--accent-text-color);
-//   }
-
-//   &:not(:placeholder-shown):valid {
-//     background: rgba(78, 248, 87, 0.1);
-//   }
-
-//   &:not(:placeholder-shown):invalid {
-//     background: rgba(248, 78, 78, 0.1);
-//   }
-
-//   @include tablet {
-//     margin: 0 auto;
-//     width: 368px;
-//     height: 42px;
-//     font-size: 14px;
-//   }
-// }
-
-// .buy-modal__comment {
-//   height: 65px;
-//   resize: none;
-
-//   @include tablet {
-//     height: 84px;
-//   }
-// }
-
-// .buy-modal__submit-button {
-//   padding: 12px 34px;
-//   font-size: 12px;
-//   line-height: 1.25;
-
-//   @include tablet {
-//     font-size: 14px;
-//     line-height: 1.21;
-//   }
-// }
