@@ -2,14 +2,24 @@
 //   outline: 2px solid tomato;
 // }
 
-.modal__svg-close {
+.js-modal-close {
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 24px;
-  height: 24px;
-  fill: var(--text-color);
+  top: 17px;
+  right: 17px;
   cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
+.modal__svg-close {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color);
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .modal {
@@ -26,12 +36,11 @@
   z-index: 30;
 
   background: #fcfcfc;
-  // border: 2px solid var(--button-color);
   outline: 2px solid var(--button-color);
   border-radius: 10px;
 
   text-align: center;
-  padding: 0px 28px 28px 28px;
+  padding: 28px;
 
   transition: opacity 300ms var(--base-cubic-transition),
     visibility 300ms var(--base-cubic-transition);
@@ -152,8 +161,4 @@
   @include tablet {
     font-size: 16px;
   }
-}
-
-.js-modal-close {
-  border: transparent;
 }
