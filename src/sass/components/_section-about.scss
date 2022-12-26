@@ -1,12 +1,12 @@
 .about {
   padding-top: 61px;
-  padding-bottom: 64px;
+  padding-bottom: 50px;
 
   background-color: var(--bg-color);
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
-    padding-bottom: 204px;
+    padding-bottom: 86px;
   }
 }
 
@@ -14,6 +14,10 @@
   display: block;
 
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 34px;
+  }
 }
 
 .about__text {
@@ -73,24 +77,24 @@
   }
 }
 
-.about__block-img {
-  position: relative;
+// .about__block-img {
+//   position: relative;
 
-  padding-top: 372px;
+//   padding-top: 372px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 0;
-    padding-left: 368px;
-  }
+//   @media screen and (min-width: 768px) {
+//     padding-top: 0;
+//     padding-left: 368px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    padding-left: 600px;
+//   @media screen and (min-width: 1200px) {
+//     padding-left: 600px;
 
-    justify-content: left;
+//     justify-content: left;
 
-    align-items: center;
-  }
-}
+//     align-items: center;
+//   }
+// }
 
 .about__img-cow {
   position: absolute;
@@ -119,9 +123,25 @@
 }
 
 .about__features-block {
-  display: inline-block;
+  position: relative;
+  padding-top: 372px;
+  text-align: center;
 
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-left: 368px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 600px;
+
+    justify-content: left;
+
+    align-items: center;
+  }
+  // display: inline-block;
+
+  // justify-content: center;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -129,7 +149,9 @@
 }
 
 .about__features {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  max-width: 320px;
+  width: 100%;
 
   &:before {
     content: '';
@@ -150,6 +172,13 @@
       #d9d9d9;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      top: 0;
+      left: 0;
+      max-width: 330px;
+      height: 330px;
+      transform: translateX(0);
+    }
   }
   &:after {
     content: '';
@@ -162,6 +191,20 @@
     width: 100%;
     height: 278px;
     background-image: url(../images/about_img/cow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      top: 26px;
+      left: 0;
+
+      max-width: 330px;
+      height: 330px;
+
+      transform: translateX(0);
+      background-image: url(../images/about_img/cow-tablet.png);
+      background-size: contain;
+    }
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
@@ -194,8 +237,6 @@
 
   color: var(--second-text-color);
 
-  width: 220px;
-
   @media screen and (min-width: 768px) {
     width: 334px;
   }
@@ -221,7 +262,7 @@
 
   color: var(--second-text-color);
 
-  width: 220px;
+  display: inline-block;
 
   @media screen and (min-width: 768px) {
     width: 325px;
