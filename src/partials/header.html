@@ -1,1 +1,63 @@
-<header class="header"></header>
+<header class="header">
+  <div class="header__wrap">
+    <a class="header__logo logo" href="index.html">
+      <img
+        class="logo__img"
+        src="./images/logo/Logo.png"
+        alt="Logo Ice cream company"
+      />
+    </a>
+
+    <div class="header__button-wrap">
+      <button
+        class="header__button-menu button-menu button-menu__open"
+        aria-controls="menu-control"
+        aria-expanded="false"
+      >
+        <svg class="button-menu__svg-open js-open-menu" width="32" height="32">
+          <use href="./images/icons/icons.svg#icon-mobile-menu-open"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="header__wrap-menu js-menu-container" id="menu-control">
+      <button class="header__button-menu button-menu button-menu__close">
+        <svg
+          class="button-menu__svg-close js-close-menu"
+          width="32"
+          height="32"
+        >
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="header__menu menu" data-mobile-menu>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#how-made">How it’s made?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#products">Our products</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="header__button-buy button-buy btn btn-bg js-open-modal"
+        type="button"
+        data-modal="1"
+      >
+        Buy now
+        <svg class="button-buy__svg" width="12" height="12">
+          <use href="./images/icons/icons.svg#icon-button-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
