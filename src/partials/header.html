@@ -1,1 +1,87 @@
-<header class="header"></header>
+<header class='header'>
+  <div class='header-container'>
+    <div class='mob-header'>
+      <a class='header-logo' href='./index.html'>
+        <picture>
+          <source
+            srcset='./images/header-logo-desctop.png 1x, ./images/header-logo-desctop-2x.png 2x'
+            media='(min-width: 1200px)'>
+          <source
+            srcset='./images/header-logo-tab.png 1x, ./images/header-logo-tab-2x.png 2x'
+            media='(min-width: 768px)'>
+          <source
+            srcset='./images/header-logo-mobile.png 1x, ./images/header-logo-mobile-2x.png 2x'
+            media='(max-width: 767px)'>
+          <img
+            src='./images/header-logo-mobile.png'
+            alt='логотип з морозивом'>
+        </picture>
+      </a>
+      <nav class='header-navigation'>
+        <ul class="navigation-list">
+          <li><a href="./index.html" class="navigation-link">Home</a></li>
+          <li><a href="#process" class="navigation-link">How it’s made?</a></li>
+          <li><a href="#products" class="navigation-link">Our products</a></li>
+          <li><a href="#contacts" class="navigation-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class='header-buttons'>
+        <button type='button' class='menu-button' data-menu-open>
+          <svg width='32' height='32'>
+            <use class='menu-icon' href='./images/icons/icons.svg#icon-menu'></use>
+          </svg>
+        </button>
+        <button >
+          Buy now
+          <svg  width='12' height='12'>
+            <use href='./images/icons/icons.svg#icon-button-arrow'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class='mobile-menu' data-menu>
+      <div class='mob-container'>
+        <div class='mob-menu-top'>
+          <a class='header-logo' href='./index.html'>
+            <picture>
+              <source
+                srcset='./images/header-logo-desctop.png 1x, ./images/header-logo-desctop-2x.png 2x'
+                media='(min-width: 1200px)'
+              >
+              <source
+                srcset='./images/header-logo-tab.png 1x, ./images/header-logo-tab-2x.png 2x'
+                media='(min-width: 768px)'>
+              <source
+                srcset='./images/header-logo-mobile.png 1x, ./images/header-logo-mobile-2x.png 2x'
+                media='(max-width: 767px)'>
+              <img
+                src='./images/header-logo-mobile.png'
+                alt='логотип з морозивом'>
+            </picture>
+          </a>
+          <button type='button' class='menu-button' data-menu-close>
+            <svg class='menu-icon' width='32' height='32'>
+              <use href='./images/icons/icons.svg#icon-cross'></use>
+            </svg>
+          </button>
+        </div>
+        <div class='mob-menu-center'>
+          <ul class='mob-navigation-list'>
+            <li class='item'><a class='mob-nav-link' href='./index.html'>Home</a></li>
+            <li class='item'><a class='mob-nav-link' href='#process'>How it’s made?</a></li>
+            <li class='item'><a class='mob-nav-link' href='#products'>Our products</a></li>
+            <li class='item'><a class='mob-nav-link' href='#contacts'>Contact</a></li>
+          </ul>
+        </div>
+        <div >
+          <button  >
+            Buy now
+            <svg  width='12' height='12'>
+              <use href='./images/icons/icons.svg#icon-button-arrow'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
