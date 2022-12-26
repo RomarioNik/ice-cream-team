@@ -1,225 +1,182 @@
 .contacts {
-   background-image: linear-gradient(to bottom, transparent 26%, #84A178 26%);
-   
-    &__list {
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
-        margin-bottom: 20px;
-        padding-top: 40px;
+  background-image: linear-gradient(to bottom, transparent 26%, #84a178 26%);
 
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-            column-gap: 16px;
-            margin-bottom: 40px;
-            min-width: 704px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            column-gap: 36px;
-            margin-bottom: 60px;
-        }
-    }
-    
-    &__item {
-            @include font(500, 12px, 1.83, 0.04em, var(--text-color));
-            background: #FCFCFC;
-            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-            border-radius: 24px;
-            padding: 40px 32px 24px 32px;    
-            width: 100%;
-            @media screen and (min-width: 768px) {
-                padding: 40px 24px;
-                @include font (500, 14px, 1.86, 0.04em, var(--text-color));
-            }
-            @media screen and (min-width: 1200px) {
-                padding: 40px;
-                @include font (500, 16px, 1.87, 0.04em, var(--text-color));
-            }
-        }
-  
-
-}
-.agency {
-    margin-top: 0;
-    &__category {
-            @include font(500, 12px, 1.4, 0.04em, var(--text-color));
-            display: inline-block;
-            background-color: var(--accent-text-color);
-            border-radius: 4px;
-            padding: 4px 14px;
-            margin-bottom: 20px;
-            @media screen and (min-width: 768px) {
-                    margin-bottom: 32px;
-                    @include font(500, 16px, 1.37, 0.04em, var(--text-color));
-                }
-        }
-      
-    &__city {
-            @include font(500, 12px, 1.86, 0.04em, var(--text-color));
-            margin-bottom: 8px;
-            @media screen and (min-width: 768px) {
-                @include font(500, 14px, 1.86, 0.04em, var(--text-color));
-                margin-bottom: 12px;
-            }
-            @media screen and (min-width: 1200px) {
-                @include font(500, 16px, 1.86, 0.04em, var(--text-color));
-            }
-        }
-    &__address {
-            margin-bottom: 24px;
-                       @media screen and (min-width: 768px) {
-                margin-bottom: 32px;
-            }
-           
-        }
-}
-.agency__address-link {
-    @include font(500, 12px, 1.83, 0.04em, #D6936D);
-    text-decoration: none;
-    @media screen and (min-width: 768px) {
-        @include font(500, 14px, 1.83, 0.04em, #D6936D);
-    }
-    @media screen and (min-width: 1200px) {
-        @include font(500, 16px, 1.83, 0.04em, var(--text-color));
-    }
-    &:hover,
-    &:focus {
-            color: #D6936D;
-            text-decoration: underline;
-            cursor: var(--cursor-hover), pointer;
-        }
-}
-
-.schedule {
-    @include font(500, 12px, 1.86, 0.04em, var(--text-color));
-    margin: 24px 0;
-    @media screen and (min-width: 768px) {
-        @include font(500, 14px, 1.86, 0.04em, var(--text-color));
-        margin: 32px 0;
-    }
-    @media screen and (min-width: 1200px) {
-        @include font(500, 16px, 1.86, 0.04em, var(--text-color));
-        }
-    &__time {
-        color: #ABABAB;
-    }
-    &__work:not(:last-child) {
-        margin-bottom: 8px;
-    }
-}
-.communication {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-    margin-top: 24px;
-    @media screen and (min-width: 768px) {
-        margin-top: 32px;
-    }
-
-    &__item {
-        @include font(500, 12px, 1.6, null, var(--text-color));
-        @media screen and (min-width: 768px) {
-            @include font(500, 14px, 1.5, null, var(--text-color));
-        }
-        @media screen and (min-width: 1200px) {
-            @include font(500, 16px, 1.5, null, var(--text-color));
-        }
-        &:hover, 
-        &:focus {
-            cursor: var(--cursor-hover), pointer;
-        }
-    }
-}
-// bottom
-.bottom-line::after {
-    display: block;
-    content: '';
-    border-bottom: 1px solid #E1E1E1;
-    width: 100%;
-}
-.contacts__btn {
+  &__list {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        column-gap: 16px;
-        flex-direction: row;
-    }
-}
-.btn__locations {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 40px;
 
-    margin: 0 auto;
-    width: 196px;
-    height: 42px;
-    transition: background-color 350ms var(--base-cubic-transition), 
-    filter 350ms var(--base-cubic-transition), 
-    transform 350ms var(--base-cubic-transition),
-    box-shadow 350ms var(--base-cubic-transition);
-    &:hover {
-            background-color: #0A8817;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            outline: transparent;
-        }
-    
-    &:focus {
-            color: #ffffff;
-            outline: transparent;
-        }
-    &:active {
-        transform: translateY(2px) translateX(2px);
-        box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.25);
-        outline: transparent;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 16px;
+      margin-bottom: 40px;
+      min-width: 704px;
     }
-    &:disabled {
-            background-color: #ABABAB;
+
+    @media screen and (min-width: 1200px) {
+      column-gap: 36px;
+      margin-bottom: 60px;
     }
+  }
+
+  &__item {
+    @include font(500, 12px, 1.83, 0.04em, var(--text-color));
+    background: #fcfcfc;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px 24px 32px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      padding: 40px 24px;
+      @include font(500, 14px, 1.86, 0.04em, var(--text-color));
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 40px;
+      @include font(500, 16px, 1.87, 0.04em, var(--text-color));
+    }
+  }
 }
-.btn__lable {
-    white-space: nowrap;
-    margin-right: 4px;
+.agency {
+  margin-top: 0;
+  &__category {
+    @include font(500, 12px, 1.4, 0.04em, var(--text-color));
+    display: inline-block;
+    background-color: var(--accent-text-color);
+    border-radius: 4px;
+    padding: 4px 14px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      @include font(500, 16px, 1.37, 0.04em, var(--text-color));
+    }
+  }
+
+  &__city {
+    @include font(500, 12px, 1.86, 0.04em, var(--text-color));
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.86, 0.04em, var(--text-color));
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      @include font(500, 16px, 1.86, 0.04em, var(--text-color));
+    }
+  }
+  &__address {
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.agency__address-link {
+  @include font(500, 12px, 1.83, 0.04em, #d6936d);
+  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.83, 0.04em, #d6936d);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(500, 16px, 1.83, 0.04em, var(--text-color));
+  }
+  &:hover,
+  &:focus {
+    color: #d6936d;
+    text-decoration: underline;
+    cursor: var(--cursor-hover), pointer;
+  }
+}
+
+.schedule {
+  @include font(500, 12px, 1.86, 0.04em, var(--text-color));
+  margin: 24px 0;
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.86, 0.04em, var(--text-color));
+    margin: 32px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(500, 16px, 1.86, 0.04em, var(--text-color));
+  }
+  &__time {
+    color: #ababab;
+  }
+  &__work:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.communication {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+
+  &__item {
+    @include font(500, 12px, 1.6, null, var(--text-color));
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.5, null, var(--text-color));
+    }
+    @media screen and (min-width: 1200px) {
+      @include font(500, 16px, 1.5, null, var(--text-color));
+    }
+    &:hover,
+    &:focus {
+      cursor: var(--cursor-hover), pointer;
+    }
+  }
+}
+// bottom
+.bottom-line::after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+.contacts__btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    flex-direction: row;
+  }
+}
+
+.btn__locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  margin: 0 auto;
+  width: 196px;
+  height: 42px;
+  transition: background-color 250ms var(--base-cubic-transition),
+    color 250ms var(--base-cubic-transition);
 }
 
 .btn__franchise {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 0 auto;
-    width: 196px;
-    height: 42px;
-    border: 2px solid #F8D24E;
-    background-color: var(--bg-color);
-    transition: border-color 350ms var(--base-cubic-transition),
-    transform 350ms var(--base-cubic-transition),
-    box-shadow 350ms var(--base-cubic-transition);
-    outline: transparent;
-    &:hover {
-        border-color: #0A8817;
-        outline: transparent;
-    }
-    &:focus {
-        color: #ffffff;
-        outline: transparent;
-    }
-    &:active {
-        transform: translateY(2px) translateX(2px);
-        box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.25);
-        outline: transparent;
-    }
-    &:disabled {
-        border-color: #ABABAB;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  margin: 0 auto;
+  width: 196px;
+  height: 42px;
+  border: 2px solid #f8d24e;
+  background-color: var(--bg-color);
+  transition: background-color 250ms var(--base-cubic-transition),
+    color 250ms var(--base-cubic-transition);
 }
-.btn__locations:focus .btn__icon {
-    fill: #FFFFFF
-}
-.btn__franchise:focus .btn__icon {
-    fill: #FFFFFF
+
+.btn__icon {
+  fill: currentColor;
 }
