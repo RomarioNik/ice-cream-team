@@ -1,3 +1,5 @@
+import Swiper from './swiper-bundle.min';
+
 new Swiper('.mySwiper', {
   slidesPerView: 1,
   centeredSlides: true,
