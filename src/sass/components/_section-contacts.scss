@@ -29,7 +29,7 @@
             padding: 40px 32px 24px 32px;    
             width: 100%;
             @media screen and (min-width: 768px) {
-                padding-bottom: 40px;
+                padding: 40px 24px;
                 @include font (500, 14px, 1.86, 0.04em, var(--text-color));
             }
             @media screen and (min-width: 1200px) {
@@ -43,7 +43,7 @@
 .agency {
     margin-top: 0;
     &__category {
-            @include font(500, 12px, 1.16, 0.04em, var(--text-color));
+            @include font(500, 12px, 1.4, 0.04em, var(--text-color));
             display: inline-block;
             background-color: var(--accent-text-color);
             border-radius: 4px;
@@ -56,9 +56,14 @@
         }
       
     &__city {
+            @include font(500, 12px, 1.86, 0.04em, var(--text-color));
             margin-bottom: 8px;
-            @media screen and (min-width: 768px) and (max-width: 1199px) {
+            @media screen and (min-width: 768px) {
+                @include font(500, 14px, 1.86, 0.04em, var(--text-color));
                 margin-bottom: 12px;
+            }
+            @media screen and (min-width: 1200px) {
+                @include font(500, 16px, 1.86, 0.04em, var(--text-color));
             }
         }
     &__address {
@@ -70,20 +75,32 @@
         }
 }
 .agency__address-link {
-    color: var(--text-color);
+    @include font(500, 12px, 1.83, 0.04em, #D6936D);
     text-decoration: none;
+    @media screen and (min-width: 768px) {
+        @include font(500, 14px, 1.83, 0.04em, #D6936D);
+    }
+    @media screen and (min-width: 1200px) {
+        @include font(500, 16px, 1.83, 0.04em, var(--text-color));
+    }
     &:hover,
     &:focus {
             color: #D6936D;
             text-decoration: underline;
+            cursor: var(--cursor-hover), pointer;
         }
 }
 
 .schedule {
+    @include font(500, 12px, 1.86, 0.04em, var(--text-color));
     margin: 24px 0;
     @media screen and (min-width: 768px) {
+        @include font(500, 14px, 1.86, 0.04em, var(--text-color));
         margin: 32px 0;
     }
+    @media screen and (min-width: 1200px) {
+        @include font(500, 16px, 1.86, 0.04em, var(--text-color));
+        }
     &__time {
         color: #ABABAB;
     }
@@ -101,9 +118,20 @@
     }
 
     &__item {
-        @include font(500, 12px, 1.58, null, var(--text-color));
+        @include font(500, 12px, 1.6, null, var(--text-color));
+        @media screen and (min-width: 768px) {
+            @include font(500, 14px, 1.5, null, var(--text-color));
+        }
+        @media screen and (min-width: 1200px) {
+            @include font(500, 16px, 1.5, null, var(--text-color));
+        }
+        &:hover, 
+        &:focus {
+            cursor: var(--cursor-hover), pointer;
+        }
     }
 }
+// bottom
 .bottom-line::after {
     display: block;
     content: '';
