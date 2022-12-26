@@ -55,8 +55,6 @@
 
     width: 210px;
 
-    // margin-bottom: 32px;
-
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -80,27 +78,14 @@
 
     padding-top: 372px;
 
-    margin-bottom: 50px;
-
     @media screen and (min-width: 768px) {
         padding-top: 0;
         padding-left: 368px;
-
-        // display: flex;
-
-        // gap: 38px;
-
-        // justify-content: center;
-
-        margin-bottom: 80px;
         }
 
     @media screen and (min-width: 1200px) {
 
         padding-left: 600px;
-        // gap: 109px;
-
-        margin-bottom: 146px;
 
         justify-content: left;
 
@@ -115,25 +100,22 @@
     left: 50%;
         
     transform: translate(-50%, -0%);
-    // display: block;
 
     border-radius: 50%;
 
     width: 280px;
 
-    // margin-bottom: 40px;
-
     @media screen and (min-width: 768px) {
             top: 50%;
-            left: 0;
+            left: -15px;
 
             transform: translate(-0%, -50%);
 
-            width: 330px;
+            width: 50%;
         }
 
     @media screen and (min-width: 1200px) {
-            width: 491px;
+            width: 50%;
         }
 }
 
@@ -270,6 +252,23 @@
     line-height: 1.29;
 
     color: #000000;
+
+    transition-property: color, background-color, disabled;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        background-color: #0A8817;
+        color: var(--second-text-color);
+    }
+
+    &:disabled {
+        background-color: #ABABAB;
+    }
 }
 
 .about__icon-arrow {
@@ -277,91 +276,13 @@
 
     top: 16px;
     right: 37px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .about__button:focus & {
+            fill: var(--second-text-color);
+        }
 }
 
-// Ниже полностью рабочий код до tablet включительно
-
-// .about__list-icon {
-//     @media screen and (min-width: 768px) {
-//             display: flex;
-//             gap: 80px;
-//         }
-// }
-
-// .about__item-cow {
-//     margin-bottom: 28px;
-// }
-
-// .about__block-icon {
-//     display: inline-block;
-
-//     width: 50px;
-//     height: 50px;
-    
-//     background-color: var(--accent-text-color);
-    
-//     border-radius: 50%;
-    
-//     align-items: center;
-//     justify-content: center;
-
-//     margin-bottom: 16px;
-
-//     @media screen and (min-width: 768px) {
-//             margin-bottom: 32px;
-//         }
-// }
-
-// .about__icon {
-// padding: 7px;
-// }
-
-// .about__icon-numbers {
-//     font-family: Montserrat;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.22;
-//     letter-spacing: 0.04em;
-
-//     color: var(--second-text-color);
-//     margin-bottom: 16px;
-
-//     @media screen and (min-width: 768px) {
-//             font-size: 48px;
-//             line-height: 1.23;
-//             margin-bottom: 12px;
-//         }
-// }
-
-// .about__icon-text {
-//     font-family: Montserrat;
-//     font-weight: 700;
-//     font-size: 12px;
-//     line-height: 1.67;
-
-//     color: var(--second-text-color);
-// }
-
-// .about__item-weight {
-//     margin-bottom: 22px;
-// }
-
-// .about__block-ice {
-//     display: inline-block;
-    
-//     width: 50px;
-//     height: 50px;
-    
-//     background-color: var(--accent-text-color);
-    
-//     border-radius: 50%;
-    
-//     align-items: center;
-//     justify-content: center;
-    
-//     margin-bottom: 22px;
-
-//     @media screen and (min-width: 768px) {
-//             margin-bottom: 32px;
-//         }
-// }
