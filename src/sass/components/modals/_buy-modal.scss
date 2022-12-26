@@ -90,10 +90,9 @@
 
   &::after {
     background-image: url('../images/images-modal/ice-cream-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/ice-cream-pic-modal-2x.jpg');
-      background-size: 101%;
     }
   }
 }
@@ -116,10 +115,9 @@
 
   &::after {
     background-image: url('../images/images-modal/ice-coffee-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/ice-coffee-pic-modal-2x.jpg');
-      background-size: 101%;
     }
   }
 }
@@ -142,10 +140,9 @@
 
   &::after {
     background-image: url('../images/images-modal/milkshake-pic-modal-1x.jpg');
-
+    background-size: 101%;
     @include retina {
       background-image: url('../images/images-modal/milkshake-pic-modal-2x.jpg');
-      background-size: 101%;
     }
   }
 }
