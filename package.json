@@ -2,7 +2,7 @@
   "name": "ice-cream-team",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://RomarioNik.github.io/ice-cream-team",
+  "homepage": "https://IhorKoreniuhin.github.io/ice-cream-team",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream-team/"
