@@ -154,6 +154,7 @@
 
 .ingredients-modal__ingredients-item {
   display: flex;
+  text-align: left;
   justify-content: space-between;
   &:not(:last-child) {
     margin-bottom: 11px;
