@@ -8,6 +8,11 @@
     padding-top: 60px;
     padding-bottom: 86px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 99px;
+  }
 }
 
 .about__container {
@@ -17,6 +22,10 @@
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 17px;
+    padding-right: 121px;
   }
 }
 
@@ -73,28 +82,9 @@
   @media screen and (min-width: 1200px) {
     font-size: 36px;
 
-    margin-bottom: 172px;
+    margin-bottom: 82px;
   }
 }
-
-// .about__block-img {
-//   position: relative;
-
-//   padding-top: 372px;
-
-//   @media screen and (min-width: 768px) {
-//     padding-top: 0;
-//     padding-left: 368px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     padding-left: 600px;
-
-//     justify-content: left;
-
-//     align-items: center;
-//   }
-// }
 
 .about__img-cow {
   position: absolute;
@@ -133,7 +123,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 600px;
+    padding: 90 0 0 599px;
 
     justify-content: left;
 
@@ -179,6 +169,14 @@
       height: 330px;
       transform: translateX(0);
     }
+
+    @media screen and (min-width: 1200px) {
+      top: 0;
+      left: 0;
+      max-width: 490px;
+      height: 490px;
+      transform: translateX(0);
+    }
   }
   &:after {
     content: '';
@@ -194,6 +192,13 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about_img/cow-mob-x2.png);
+      background-size: contain;
+    }
+
     @media screen and (min-width: 768px) {
       top: 26px;
       left: 0;
@@ -204,6 +209,28 @@
       transform: translateX(0);
       background-image: url(../images/about_img/cow-tablet.png);
       background-size: contain;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about_img/cow-tablet-x2.png);
+        background-size: contain;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      top: 39px;
+
+      max-width: 490px;
+      height: 490px;
+
+      background-image: url(../images/about_img/cow-pc.png);
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about_img/cow-pc-x2.png);
+        background-size: contain;
+      }
     }
   }
   @media screen and (min-width: 768px) {
