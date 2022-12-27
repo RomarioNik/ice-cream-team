@@ -1,10 +1,111 @@
-<!-- стилизуй по этому классу buy-modal класс modal - общий класс для всех
-модалок -->
 <div class="buy-modal modal" data-modal="1">
   <button class="buy-modal__button-close js-modal-close">
     <svg class="modal__svg-close">
       <use href="./images/icons/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <p class="modal__title">Заголовок окна 1</p>
+  <div class="modal-container">
+    <form>
+      <p class="modal__title buy-modal__title">Buy now</p>
+
+      <ul class="buy-modal__product-list">
+        <li class="buy-modal__product-item">
+          <!-- ---Невидимий чекбокс--- -->
+          <div class="buy-modal__product-wrap">
+            <input
+              type="checkbox"
+              name="icecream"
+              id="icecream"
+              class="buy-now-check visually-hidden"
+            />
+
+            <label
+              class="buy-modal__product-description buy-modal__ice-cream"
+              for="icecream"
+            >
+              Ice Cream
+            </label>
+          </div>
+        </li>
+
+        <li class="buy-modal__product-item">
+          <div class="buy-modal__product-wrap">
+            <input
+              type="checkbox"
+              name="icecoffee"
+              id="icecoffee"
+              class="buy-now-check visually-hidden"
+              checked
+            />
+
+            <label
+              class="buy-modal__product-description buy-modal__ice-coffee"
+              for="icecoffee"
+            >
+              Ice Coffee
+            </label>
+          </div>
+        </li>
+
+        <li class="buy-modal__product-item">
+          <div class="buy-modal__product-wrap">
+            <input
+              type="checkbox"
+              name="milkshake"
+              id="milkshake"
+              class="buy-now-check visually-hidden"
+            />
+
+            <label
+              class="buy-modal__product-description buy-modal__milkshake"
+              for="milkshake"
+            >
+              Milkshake
+            </label>
+          </div>
+        </li>
+      </ul>
+
+      <div class="buy-modal__input-field modal__input-field">
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          class="buy-modal__input modal__input"
+          placeholder="Name"
+          required
+          pattern="[A-Za-zА-Яа-яЁёІіЇї\-\s]+$"
+          title="Name can only contain letters, spaces and dashes."
+        />
+      </div>
+      <div class="buy-modal__input-field modal__input-field">
+        <input
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          class="buy-modal__input modal__input"
+          required
+          placeholder="Phone"
+          pattern="[\d+\-\/*%^()\s]+$"
+          title="Phone can not contain letters."
+        />
+      </div>
+
+      <div class="buy-modal__comment-field modal__comment-field">
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="buy-modal__input buy-modal__comment modal__input modal__comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-bg buy-modal__submit-button modal__submit-button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </div>

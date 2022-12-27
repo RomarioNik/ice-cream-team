@@ -1,0 +1,22 @@
+.read-modal {
+  @include tablet {
+    padding: 32px 60px;
+  }
+}
+
+.read-modal__title {
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.read-modal__video {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: fit-content;
+
+  @include tablet {
+    margin-bottom: 32px;
+    height: 252px;
+  }
+}

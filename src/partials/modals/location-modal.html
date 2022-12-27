@@ -1,7 +1,43 @@
-<!-- стилизуй по этому классу location-modal // класс modal - общий класс для всех
-модалок -->
 <div class="location-modal modal" data-modal="4">
-  <svg class="modal__svg-close js-modal-close">
-    <use href="./images/icons/icons.svg#icon-close"></use>
-  </svg>
+  <button class="location-modal__button-close js-modal-close">
+    <svg class="modal__svg-close">
+      <use href="./images/icons/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="modal-container">
+    <p class="modal__title location-modal__title">Our Locations</p>
+    <div class="location-modal__picture-thumb">
+      <picture>
+        <source
+          srcset="
+            ./images/images-modal/map-pic-modal-1x.jpg 1x,
+            ./images/images-modal/map-pic-modal-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/images-modal/map-pic-modal-phone-1x.jpg 1x,
+            ./images/images-modal/map-pic-modal-phone-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="location-modal__picture"
+          src="./images/images-modal/map-pic-modal-2x.jpg"
+          alt="Shocolate ice cream in hand"
+          width="448"
+        />
+      </picture>
+    </div>
+    <a
+      class="btn btn-bg location-modal__btn-link"
+      href="https://goo.gl/maps/d4HkRMpLUKhJwv7S6"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Open map</a
+    >
+  </div>
 </div>

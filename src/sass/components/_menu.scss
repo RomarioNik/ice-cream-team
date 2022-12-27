@@ -1,0 +1,86 @@
+.menu {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 205px;
+  }
+}
+
+.menu__list {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+}
+
+.menu__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu__link {
+  @include font(700, 32px, 121%, null, var(--second-text-color));
+  transition: color 250ms var(--base-cubic-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 16px, 125%, null, var(--second-text-color));
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+      cursor: var(--cursor-hover), pointer;
+    }
+  }
+}
+
+.button-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.button-menu__open {
+  z-index: 2;
+}
+
+.button-menu__svg-open {
+  fill: #ffffff;
+}
+
+.button-menu__close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 98;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    right: 32px;
+  }
+}
+
+.button-menu__svg-close {
+  fill: #ffffff;
+}
+
+.header__wrap-menu.is-open {
+  transform: translateX(0);
+}

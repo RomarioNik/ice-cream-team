@@ -1,3 +1,5 @@
+const bodyScrollLock = require('./body-scroll-lock');
+
 !(function (e) {
   'function' != typeof e.matches &&
     (e.matches =
@@ -31,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
+  const targetElement = document.body;
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -52,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      bodyScrollLock.disableBodyScroll(targetElement);
+      // document.body.classList.remove('preload');
     }); // end click
   }); // end foreach
 
@@ -61,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      bodyScrollLock.enableBodyScroll(targetElement);
     });
   }); // end foreach
 
@@ -72,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        bodyScrollLock.enableBodyScroll(targetElement);
       }
     },
     false
@@ -80,5 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    bodyScrollLock.enableBodyScroll(targetElement);
   });
 }); // end ready
