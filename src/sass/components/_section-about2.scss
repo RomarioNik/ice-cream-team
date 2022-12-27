@@ -379,6 +379,9 @@
   background-color: var(--accent-text-color);
   line-height: 129%;
   color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 
   transition: color 250ms var(--base-cubic-transition),
     background-color 250ms var(--base-cubic-transition);
@@ -386,4 +389,8 @@
   @media screen and (max-width: 767px) {
     margin: 0 auto;
   }
+}
+
+.about__icon-arrow {
+  fill: currentColor;
 }
