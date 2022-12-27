@@ -1,6 +1,3 @@
-// .section__banner {
-// }
-
 .banner {
   position: relative;
   height: 502px;
@@ -72,9 +69,6 @@
   }
 }
 
-// .banner__info {
-// }
-
 .banner__link-button {
   padding: 11px 26px;
   @include font(600, 12px, 125%, null, #000000);
@@ -84,82 +78,42 @@
   transition: background-color 250ms var(--base-cubic-transition),
     color 250ms var(--base-cubic-transition);
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1199px) {
-    &:hover {
-      border-color: var(--second-button-color);
-    }
-  }
-
   @media screen and (min-width: 1200px) {
     padding: 12px 34px;
     font-size: 14px;
     line-height: 128%;
-
-    &:hover {
-      border-color: var(--second-button-color);
-    }
-
-    &:focus {
-      border-color: var(--second-button-color);
-      color: var(--second-text-color);
-    }
-
-    &:disabled {
-      border-color: #ababab;
-      color: #000000;
-    }
   }
 }
 
 .banner__link {
-  margin-left: 120px;
+  margin-left: 12px;
   @include font(600, 12px, 125%, null, var(--accent-text-color));
   text-decoration-line: underline;
   transition: background-color 250ms var(--base-cubic-transition),
     color 250ms var(--base-cubic-transition);
 
-  @media screen and (min-width: 768px) {
-    margin-left: 12px;
+  &:hover {
+    color: var(--second-button-color);
   }
 
-  @media screen and (max-width: 1199px) {
-    &:hover {
-      color: var(--second-button-color);
-    }
+  &:focus {
+    color: var(--second-text-color);
+  }
 
-    &:focus {
-      color: var(--second-text-color);
-    }
+  &:disabled {
+    color: #ababab;
+  }
 
-    &:disabled {
-      color: #ababab;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 125%;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 34px;
     font-size: 14px;
     line-height: 121%;
-
-    &:hover {
-      color: var(--second-button-color);
-    }
-
-    &:focus {
-      color: var(--second-text-color);
-    }
-
-    &:disabled {
-      color: #ababab;
-    }
   }
-
-  font-size: 14px;
-  line-height: 17px;
 }
 
 .banner__list {

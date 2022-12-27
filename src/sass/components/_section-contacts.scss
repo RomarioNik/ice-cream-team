@@ -1,12 +1,23 @@
 .contacts {
   background-image: linear-gradient(to bottom, transparent 26%, #84a178 26%);
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
     margin-bottom: 20px;
-    padding-top: 40px;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
@@ -91,20 +102,28 @@
 .schedule {
   @include font(500, 12px, 1.86, 0.04em, var(--text-color));
   margin: 24px 0;
+
   @media screen and (min-width: 768px) {
-    @include font(500, 14px, 1.86, 0.04em, var(--text-color));
+    font-size: 14px;
     margin: 32px 0;
   }
   @media screen and (min-width: 1200px) {
-    @include font(500, 16px, 1.86, 0.04em, var(--text-color));
+    font-size: 16px;
   }
-  &__time {
-    color: #ababab;
-  }
+
+  // &__time {
+  //   color: #ababab;
+  // }
+
   &__work:not(:last-child) {
     margin-bottom: 8px;
   }
+
+  &__work-time {
+    color: #ababab;
+  }
 }
+
 .communication {
   display: flex;
   flex-direction: column;
@@ -140,7 +159,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  padding-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;

@@ -11,6 +11,8 @@ body {
 }
 
 body.webp {
+  background-size: contain;
+
   @media screen and (max-width: 480px) {
     background-image: url('../images/bg/bg-mobile@1x.webp');
 
@@ -61,6 +63,8 @@ body.webp {
 }
 
 body.no-webp {
+  background-size: contain;
+
   @media screen and (max-width: 480px) {
     background-image: url('../images/bg/bg-mobile@1x.jpg');
 
