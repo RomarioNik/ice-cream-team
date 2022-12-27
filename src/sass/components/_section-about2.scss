@@ -1,0 +1,389 @@
+.about {
+  padding-top: 60px;
+  background-color: var(--bg-color);
+}
+
+.about__lable {
+  margin-bottom: 12px;
+  @include font(700, 18px, 122%, null, var(--second-text-color));
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(800, 22px, 122%, 0.04em, var(--second-text-color));
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(800, 30px, 123%, 0.04em, var(--second-text-color));
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: Seymour One;
+  @include font(400, 30px, 126%, 0.04em, var(--second-text-color));
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 34px, 126%, 0.06em, var(--second-text-color));
+    width: 100%;
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 36px, 125%, 0.06em, var(--second-text-color));
+    font-size: 36px;
+    margin-bottom: 82px;
+  }
+}
+
+.about__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 340px;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 0;
+    padding-left: 368px;
+    height: calc(330px + 26px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 616px;
+    height: calc(490px + 39px);
+  }
+}
+
+.about__img {
+  position: relative;
+  border-radius: 50%;
+}
+
+.webp .about_description {
+  max-width: 463px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 278px;
+    height: 278px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      top: 0;
+      left: 0;
+      max-width: 330px;
+      height: 330px;
+      transform: translateX(0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 0;
+      left: 0;
+      max-width: 490px;
+      height: 490px;
+      transform: translateX(0);
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 279px;
+    height: 278px;
+    border-radius: 50%;
+    background-image: url('../images/about/cow-mobile@1x.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-mobile@2x.webp');
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/about/cow-mobile@3x.webp');
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 350px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      width: 330px;
+      height: 330px;
+    }
+
+    &::after {
+      top: 26px;
+      left: 0;
+      transform: translateX(0);
+      width: 330px;
+      height: 330px;
+      background-image: url('../images/about/cow-tablet@1x.webp');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about/cow-tablet@2x.webp');
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url('../images/about/cow-tablet@3x.webp');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+    &::before {
+      width: 490px;
+      height: 490px;
+    }
+
+    &::after {
+      top: 39px;
+      left: 0;
+      width: 490px;
+      height: 490px;
+      background-image: url('../images/about/cow-desktop@1x.webp');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about/cow-desktop@2x.webp');
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url('../images/about/cow-desktop@3x.webp');
+      }
+    }
+  }
+}
+
+.no-webp .about_description {
+  max-width: 463px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 278px;
+    height: 278px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 279px;
+    height: 278px;
+    border-radius: 50%;
+    background-image: url('../images/about/cow-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-mobile@2x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/about/cow-mobile@3x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      width: 330px;
+      height: 330px;
+    }
+
+    &::after {
+      top: 26px;
+      left: 0;
+      transform: translateX(0);
+      width: 330px;
+      height: 330px;
+      background-image: url('../images/about/cow-tablet@1x.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about/cow-tablet@2x.jpg');
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url('../images/about/cow-tablet@3x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+    &::before {
+      width: 490px;
+      height: 490px;
+    }
+
+    &::after {
+      top: 39px;
+      left: 0;
+      width: 490px;
+      height: 490px;
+      background-image: url('../images/about/cow-desktop@1x.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about/cow-desktop@2x.jpg');
+      }
+
+      @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url('../images/about/cow-desktop@3x.jpg');
+      }
+    }
+  }
+}
+
+.about_description {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 350px;
+  }
+}
+
+.text-top {
+  @include font(400, 12px, 176%, 0.04em, var(--second-text-color));
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.text-middle {
+  @include font(400, 12px, 162%, null, var(--second-text-color));
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 194%, 0.04em, var(--second-text-color));
+  }
+}
+
+.text-bottom {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    @include font(400, 12px, 194%, 0.04em, var(--second-text-color));
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 54px;
+    @include font(400, 14px, 194%, 0.04em, var(--second-text-color));
+  }
+}
+
+.about__button {
+  background-color: var(--accent-text-color);
+  line-height: 129%;
+  color: #000000;
+
+  transition: color 250ms var(--base-cubic-transition),
+    background-color 250ms var(--base-cubic-transition);
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
