@@ -122,7 +122,8 @@
     padding: 0;
     border-color: transparent;
     background-color: transparent;
-
+    color: var(--second-text-color);
+    
     &:hover,
     &:focus {
         cursor: url('./../images/cursor.png'), auto;
@@ -134,13 +135,13 @@
 }
 
 .menu-icon {
-    color: var(--iconFill);
+    fill: white;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .menu-button:hover &,
     .menu-button:focus & {
-        fill: var(--hoverIconFill);
+        fill: green;
         cursor: url('./../images/cursor.png'), auto;
         outline: none;
     }
@@ -223,7 +224,7 @@
     align-items: center;
     text-align: center;
 
-    color: var(--text-color);
+    color: var(--second-text-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -231,7 +232,7 @@
     &:hover,
     &:focus {
         transform: scale(1.2);
-        cursor: url('./../images/cursor.png'), auto;
+        cursor: url('./../images/yellow-cursor.png'), auto;
         color: var(--text-color);
         outline: none;
     }
@@ -259,13 +260,12 @@
 
 
     &:hover {
-        cursor: url('./../images/cursor.png'), auto;
-        background: var(--hoverIconFill);
+        cursor: url('./../images/yellow-cursor.png'), auto;
+        background: green;
     }
 
     &:focus {
-        background: var(--hoverIconFill);
-        color: var(--iconFill);
+        fill: var(--text-color);
         outline: none;
     }
 

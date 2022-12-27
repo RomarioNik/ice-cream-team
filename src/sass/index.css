@@ -296,6 +296,7 @@ img {
   padding: 0;
   border-color: transparent;
   background-color: transparent;
+  color: var(--second-text-color);
 }
 .menu-button:hover, .menu-button:focus {
   cursor: url("./../images/cursor.png"), auto;
@@ -307,11 +308,11 @@ img {
 }
 
 .menu-icon {
-  color: var(--iconFill);
+  fill: white;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button:hover .menu-icon, .menu-button:focus .menu-icon {
-  fill: var(--hoverIconFill);
+  fill: green;
   cursor: url("./../images/cursor.png"), auto;
   outline: none;
 }
@@ -389,12 +390,12 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--text-color);
+  color: var(--second-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-nav-link:hover, .mob-nav-link:focus {
   transform: scale(1.2);
-  cursor: url("./../images/cursor.png"), auto;
+  cursor: url("./../images/yellow-cursor.png"), auto;
   color: var(--text-color);
   outline: none;
 }
@@ -419,12 +420,11 @@ img {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-buy:hover {
-  cursor: url("./../images/cursor.png"), auto;
-  background: var(--hoverIconFill);
+  cursor: url("./../images/yellow-cursor.png"), auto;
+  background: green;
 }
 .menu-buy:focus {
-  background: var(--hoverIconFill);
-  color: var(--iconFill);
+  fill: var(--text-color);
   outline: none;
 }
 @media screen and (min-width: 768px) {
