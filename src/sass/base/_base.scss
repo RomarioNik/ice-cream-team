@@ -10,10 +10,14 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -24,4 +28,34 @@
   border: none;
   border-radius: 10px;
   text-align: center;
+}
+
+.btn-bg {
+  &:hover {
+    background-color: var(--second-button-color);
+  }
+
+  &:focus {
+    background-color: var(--second-button-color);
+    color: #ffffff;
+  }
+
+  &:disabled {
+    color: #ababab;
+  }
+}
+
+.btn-tr {
+  &:hover {
+    border-color: var(--second-button-color);
+  }
+
+  &:focus {
+    border-color: var(--second-button-color);
+    color: #ffffff;
+  }
+
+  &:disabled {
+    border-color: #ababab;
+  }
 }

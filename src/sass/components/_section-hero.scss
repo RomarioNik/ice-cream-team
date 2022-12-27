@@ -1,0 +1,250 @@
+// .section__banner {
+// }
+
+.banner {
+  position: relative;
+  height: 502px;
+  padding-top: 99px;
+  background-color: var(--bg-color);
+
+  @media screen and (min-width: 768px) {
+    height: 415px;
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+    padding-top: 118px;
+  }
+}
+
+.banner__container {
+  height: 100%;
+
+  background-image: url('../images/banner-img/dots-480.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/banner-img/dots-768.svg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/banner-img/dots-1200.svg');
+  }
+}
+
+.banner__wrap-info {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+  }
+}
+
+.banner__title {
+  max-width: 247px;
+  margin-bottom: 39px;
+  font-family: 'Seymour One', sans-serif;
+  @include font(400, 26px, 126%, 0.04em, var(--second-text-color));
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    @include font(400, 38px, 126%, 0.04em, var(--second-text-color));
+  }
+}
+
+.banner__title-word {
+  font-size: 34px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
+}
+
+// .banner__info {
+// }
+
+.banner__link-button {
+  padding: 11px 26px;
+  @include font(600, 12px, 125%, null, #000000);
+  border: 2px solid var(--button-color);
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 250ms var(--base-cubic-transition),
+    color 250ms var(--base-cubic-transition);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &:hover {
+      border-color: var(--second-button-color);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 128%;
+
+    &:hover {
+      border-color: var(--second-button-color);
+    }
+
+    &:focus {
+      border-color: var(--second-button-color);
+      color: var(--second-text-color);
+    }
+
+    &:disabled {
+      border-color: #ababab;
+      color: #000000;
+    }
+  }
+}
+
+.banner__link {
+  margin-left: 120px;
+  @include font(600, 12px, 125%, null, var(--accent-text-color));
+  text-decoration-line: underline;
+  transition: background-color 250ms var(--base-cubic-transition),
+    color 250ms var(--base-cubic-transition);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 12px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &:hover {
+      color: var(--second-button-color);
+    }
+
+    &:focus {
+      color: var(--second-text-color);
+    }
+
+    &:disabled {
+      color: #ababab;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 34px;
+    font-size: 14px;
+    line-height: 121%;
+
+    &:hover {
+      color: var(--second-button-color);
+    }
+
+    &:focus {
+      color: var(--second-text-color);
+    }
+
+    &:disabled {
+      color: #ababab;
+    }
+  }
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.banner__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.banner__item {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__number {
+  margin-bottom: 4px;
+  display: block;
+  @include font(900, 28px, 121%, 0.04em, var(--text-color));
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+
+.banner__place {
+  @include font(400, 8px, 125%, null, var(--second-text-color));
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 121%;
+  }
+}
+
+.banner__plate {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.banner__plate-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 24px;
+  }
+}
+
+.banner__plate-text {
+  max-width: 139px;
+  @include font(400, 12px, 140%, null, var(--second-text-color));
+
+  @media screen and (min-width: 1200px) {
+    max-width: 200px;
+    font-size: 14px;
+  }
+}
+
+.banner__plate-svg {
+  fill: #fcfcfc;
+}
+
+.banner__thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-48%);
+
+  @media screen and (min-width: 768px) {
+    left: 50%;
+    transform: translateX(10%);
+  }
+}
