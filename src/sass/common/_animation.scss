@@ -1,0 +1,27 @@
+.boxHidded {
+  visibility: hidden; /*  Делаем иконки полностью прозрачными  */
+}
+.fadeInUp,
+.fadeOutDown,
+.fadeInLeft,
+.fadeInRight,
+.fadeOutLeft,
+.fadeOutRight,
+.fadeIn,
+.fadeOut,
+.zoomIn,
+.zoomOut {
+  visibility: visible; /*  Делаем иконки полностью не прозрачными  */
+}
+
+.delay-05s {
+  @include tablet {
+    animation-delay: 0.5s;
+  }
+}
+
+.delay-1s {
+  @include tablet {
+    animation-delay: 1s;
+  }
+}

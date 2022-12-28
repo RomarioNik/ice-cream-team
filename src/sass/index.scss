@@ -1,4 +1,6 @@
 @import './common/common';
+@import './common/animate-min';
+
 @import './base/variables';
 @import './utils/mixins';
 @import './base/reset';
@@ -35,3 +37,5 @@
 
 // visually-hidden
 @import './components/visually-hidden';
+
+@import './common/animation';
