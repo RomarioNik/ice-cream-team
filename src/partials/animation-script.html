@@ -1,0 +1,87 @@
+<script>
+  $('.element-left')
+    .waypoint(
+      function (dir) {
+        if (dir === 'down')
+          $(this).removeClass('fadeOutLeft').addClass('fadeInLeft');
+        else $(this).removeClass('fadeInLeft').addClass('fadeOutLeft');
+      },
+      {
+        offset: '100%',
+      }
+    )
+    .waypoint(
+      function (dir) {
+        if (dir === 'down')
+          $(this).removeClass('fadeInLeft').addClass('fadeOutLeft');
+        else $(this).removeClass('fadeOutLeft').addClass('fadeInLeft');
+      },
+      {
+        offset: -80,
+      }
+    );
+
+  // $('.element-middle')
+  //   .waypoint(
+  //     function (dir) {
+  //       if (dir === 'down')
+  //         $(this).removeClass('fadeOut').addClass('fadeIn');
+  //       else $(this).removeClass('fadeIn').addClass('fadeOut');
+  //     },
+  //     {
+  //       offset: '100%',
+  //     }
+  //   )
+  //   .waypoint(
+  //     function (dir) {
+  //       if (dir === 'down')
+  //         $(this).removeClass('fadeIn').addClass('fadeOut');
+  //       else $(this).removeClass('fadeOut').addClass('fadeIn');
+  //     },
+  //     {
+  //       offset: -80,
+  //     }
+  //   );
+
+  $('.element-middle')
+    .waypoint(
+      function (dir) {
+        if (dir === 'down') $(this).removeClass('zoomOut').addClass('zoomIn');
+        else $(this).removeClass('zoomIn').addClass('zoomOut');
+      },
+      {
+        offset: '100%',
+      }
+    )
+    .waypoint(
+      function (dir) {
+        if (dir === 'down') $(this).removeClass('zoomIn').addClass('zoomOut');
+        else $(this).removeClass('zoomOut').addClass('zoomIn');
+      },
+      {
+        offset: -50,
+      }
+    );
+
+  $('.element-right')
+    .waypoint(
+      function (dir) {
+        if (dir === 'down')
+          $(this).removeClass('fadeOutRight').addClass('fadeInRight');
+        else $(this).removeClass('fadeInRight').addClass('fadeOutRight');
+      },
+      {
+        offset: '100%',
+      }
+    )
+    .waypoint(
+      function (dir) {
+        if (dir === 'down')
+          $(this).removeClass('fadeInRight').addClass('fadeOutRight');
+        else $(this).removeClass('fadeOutRight').addClass('fadeInRight');
+      },
+      {
+        offset: -50,
+      }
+    );
+</script>
